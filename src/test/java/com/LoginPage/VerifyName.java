@@ -26,6 +26,7 @@ public class VerifyName {
 		key.sendKeys(Locators.PASS, "Aj@123");
 		key.sendKeys(Locators.CONFIRM_PASS, "Aj@123");
 		key.clickButton("//input[@value=\"Register\"]");
+		
 
 		//key.clickButton(Locators.REGISTER);
 		String msg1 = key.getText(Locators.TEXT);
