@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Keywords {
-	RemoteWebDriver driver;
+	public RemoteWebDriver driver;
 	public void openBrowser() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
