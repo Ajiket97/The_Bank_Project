@@ -29,6 +29,10 @@ public class Keywords {
 	public String getText(String path) {
 		return driver.findElement(By.xpath(path)).getText();
 	}
+	
+	public String getMessage(String path) {
+		return driver.findElement(By.xpath(path)).getText();
+	}
 
 	public void quitBrowser() {
 		driver.quit();
