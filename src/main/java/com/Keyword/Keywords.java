@@ -1,13 +1,14 @@
 package com.Keyword;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 public class Keywords {
-	public RemoteWebDriver driver;
+	 public WebDriver driver;
 	public void openBrowser() {
-		driver = new ChromeDriver();
+		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 
