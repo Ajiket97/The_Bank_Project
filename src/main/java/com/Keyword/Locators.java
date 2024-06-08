@@ -15,5 +15,6 @@ public interface Locators {
 	String PASS="//input[@name=\"customer.password\"]";
 	String CONFIRM_PASS="//input[@name=\"repeatedPassword\"]";
 	String ENTER = "//input[@value=\"Register\"]";
-	String TEXT = "//span[@id=\"customer.firstName.errors\"]";
+	String TEXT = "//input[@name=\"customer.address.state\"]";
+	String SSNNUM = "//input[@id=\"customer.ssn\"]";
 }
