@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class Keywords {
-	 public WebDriver driver;
+	 public static WebDriver driver;
 	public void openBrowser() {
 		this.driver = new ChromeDriver();
 		driver.manage().window().maximize();
