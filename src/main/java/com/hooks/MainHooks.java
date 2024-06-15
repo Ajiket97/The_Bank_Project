@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import com.BankPropertiesFile.PropertiesFile;
 import com.Keyword.Keywords;
-import com.Keyword.Locators;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
