@@ -1,16 +1,17 @@
 package com.Keyword;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 public class Keywords {
-	 public static WebDriver driver;
-	public void openBrowser() {
-		this.driver = new ChromeDriver();
-		driver.manage().window().maximize();
+	public static WebDriver driver;
 
+	public void openBrowser() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 
 	}
 
@@ -30,7 +31,7 @@ public class Keywords {
 	public String getText(String path) {
 		return driver.findElement(By.xpath(path)).getText();
 	}
-	
+
 	public String getMessage(String path) {
 		return driver.findElement(By.xpath(path)).getText();
 	}
@@ -39,6 +40,13 @@ public class Keywords {
 		driver.quit();
 	}
 
+	public void waits(int x) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(x));
+	}
 	
+	public String currentUrl() {
+		return driver.getCurrentUrl();	
+		
+	}
 
 }

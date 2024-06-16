@@ -17,4 +17,8 @@ public interface Locators {
 	String ENTER = "//input[@value=\"Register\"]";
 	String TEXT = "//input[@name=\"customer.address.state\"]";
 	String SSNNUM = "//input[@id=\"customer.ssn\"]";
+	String LOGINUSERNAME = "//input[@name=\"username\"]";
+	String LOGINPASS = "//input[@name=\"password\"]";
+	String LoginBTN = "//input[@value=\"Log In\"]";
+	String ERRMSG = "//p[text()='The username and password could not be verified.']";
 }
